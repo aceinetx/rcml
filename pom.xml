@@ -4,7 +4,7 @@
   <groupId>ru.aceinet.rcml</groupId>
   <artifactId>rcml</artifactId>
   <packaging>jar</packaging>
-  <version>1.3.3-SNAPSHOT</version>
+  <version>1.3.4-SNAPSHOT</version>
   <name>rcml</name>
 	<url>http://maven.apache.org</url>
 	<properties>
