@@ -1,0 +1,4 @@
+name: rcml 
+version: '${project.version}'
+main: ru.aceinet.rcml.RCML
+api-version: '1.21'
