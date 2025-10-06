@@ -6,7 +6,7 @@ public class NodeRoot extends Node {
     public ArrayList<Node> children;
 
     public NodeRoot() {
-        children = new ArrayList<>();
+        children = new ArrayList<Node>();
     }
 
     public boolean compile(Compiler compiler) {

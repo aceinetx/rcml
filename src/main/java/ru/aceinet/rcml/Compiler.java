@@ -13,7 +13,7 @@ public class Compiler {
     public Compiler(Parser parser) {
         this.parser = parser;
         this.component = Component.text("");
-        this.tags = new ArrayList<>();
+        this.tags = new ArrayList<NodeTag>();
         this.doReset = false;
     }
 
