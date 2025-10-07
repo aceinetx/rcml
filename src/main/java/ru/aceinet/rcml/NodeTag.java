@@ -1,5 +1,6 @@
 package ru.aceinet.rcml;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -99,7 +100,8 @@ public class NodeTag extends Node {
                     return null;
                 }
                 component.style(Style.empty());
-                component.decorations(new Map<TextDecoration, State>());
+                Map<TextDecoration, State> decos = new HashMap<>();
+                component.decorations(decos);
                 compiler.doReset = true;
                 return component;
             default:
