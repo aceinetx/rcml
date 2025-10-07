@@ -13,9 +13,6 @@ public class NodeText extends Node {
         Component component = Component.text(text);
         for (NodeTag tag : compiler.tags) {
             component = tag.apply(compiler, component);
-            if (tag.name.equals("reset")) {
-                component = Component.text(text);
-            }
 
             if (component == null)
                 return false;

@@ -1,13 +1,16 @@
 package ru.aceinet.rcml;
 
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.annotation.Nullable;
 
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.Style;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.kyori.adventure.text.format.TextDecoration.State;
 
 public class NodeTag extends Node {
     public String name;
@@ -95,6 +98,8 @@ public class NodeTag extends Node {
                     compiler.component = Component.text("RCML05: tag reset should not have a value");
                     return null;
                 }
+                component.style(Style.empty());
+                component.decorations(new Map<TextDecoration, State>());
                 compiler.doReset = true;
                 return component;
             default:

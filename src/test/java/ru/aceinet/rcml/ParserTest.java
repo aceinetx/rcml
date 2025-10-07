@@ -14,9 +14,6 @@ public class ParserTest
         return new TestSuite(ParserTest.class);
     }
 
-    /**
-     * Rigourous Test :-)
-     */
     public void testApp() {
         Parser parser = new Parser("[color: 0,255,17]Colored text");
         parser.parse();
