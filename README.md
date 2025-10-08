@@ -37,6 +37,37 @@ RCML is a markup language for paper components, i made this because i found them
 - `RCML04` - Invalid integer
 - `RCML05` - Value found in a non-valued tag
 
+## Setup (only maven for now)
+- 1. Add jitpack repository
+In your pom.xml in `<repositories>`:
+```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
+- 2. Add RCML dependency
+In your pom.xml in `<dependencies>`:
+```xml
+<dependency>
+    <groupId>com.github.aceinetx</groupId>
+    <artifactId>rcml</artifactId>
+    <version>1.3.7</version>
+    <scope>provided</scope>
+</dependency>
+```
+## Use
+- 1. Import rcml
+```java
+import ru.aceinet.rcml.RCML;
+```
+- 2. Compile some rcml code
+```java
+Bukkit.getConsoleSender().sendMessage(
+  RCML.compile("Hello from [bold:true][color:255,0,0]RCML[reset]!")
+);
+```
+
 ___
 
 rvnfml (a.k.a aceinetx) 2021-2025
