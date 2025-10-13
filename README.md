@@ -52,7 +52,7 @@ In your pom.xml in `<dependencies>`:
 <dependency>
     <groupId>com.github.aceinetx</groupId>
     <artifactId>rcml</artifactId>
-    <version>1.3.7</version>
+    <version>1.4.0</version>
     <scope>provided</scope>
 </dependency>
 ```
